@@ -7,6 +7,7 @@
     <li><strong>Kmeans_3D_Projections.py</strong>: K-means implementation with 3D projections, does not read from a file.</li>
     <li><strong>Kmeans_Final_2D.py</strong>: K-means implementation with 2D projections, reads from a file, includes a threshold for stopping.</li>
     <li><strong>Kmeans_Final_3D.py</strong>: K-means implementation with 3D projections, reads from a file, includes a threshold for stopping.</li>
+    <li><strong>Elbow_Method.py</strong>: Elbow method implementation which helps select a value of K or of clusters.</li>
     <li><strong>Test1.txt</strong>: Example data file used by <em>Kmeans_Final_2D.py</em> and <em>Kmeans_Final_3D.py</em>.</li>
 </ul>
 
