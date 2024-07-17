@@ -68,10 +68,12 @@ clusters = assign_clusters(X, clusters)
 clusters = update_clusters(X, clusters)
 pred = pred_cluster(X, clusters)
 
-fig = plt.figure(0)
+ax = plt.axes(projection ="3d")
+
 plt.grid(True)
-plt.scatter3D(X[:, 0], X[:, 1], X[:2], marker='o', s=20, label='Circle')
+ax.scatter(X[: ,0] ,X[: ,1], X[: ,2], c = pred)
 for i in clusters:
+    print("\nCluster: " + str(i) + " is centered at " + str(clusters[i]['center']))
     center = clusters[i]['center']
-    plt.scatter(center[0], center[1], marker='*', c='red')
+    ax.scatter(center[0] ,center[1] ,center[2] ,marker = '*' ,c = 'red')
 plt.show()
