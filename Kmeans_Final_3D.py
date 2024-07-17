@@ -1,3 +1,4 @@
+# kmeans implentation with 3d projections, reads from file, and has threshold
 
 import numpy as np
 import matplotlib.pyplot as plt
